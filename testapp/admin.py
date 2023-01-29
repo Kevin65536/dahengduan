@@ -1,9 +1,8 @@
 from django.contrib import admin
 
 # Register your models here.
-from testapp.models import job_detail, pic, tourism, ethnic
+from testapp.models import pic, tourism, ethnic
 
-admin.site.register(job_detail)
 admin.site.register(pic)
 admin.site.register(tourism)
 admin.site.register(ethnic)
