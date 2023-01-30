@@ -24,4 +24,4 @@ def post_comment(request):
         comment_temp.save()
 
 
-    return redirect("testapp:typography")
+    return redirect("mainapp:tourism_page")
