@@ -17,17 +17,19 @@ def index(request):
                   {'img': img, 'attractions': attractions, 'ethnic': ethnics, 'user': current_user})
 
 
-def about(request):
+def ethnic_page(request):
+    img = pic.objects.all()
     current_user = request.user
-    return render(request, 'about.html', {'user': current_user})
+    return render(request, 'ethnic.html', {'img': img, 'user': current_user})
 
 
 def contacts(request):
+    img = pic.objects.all()
     current_user = request.user
-    return render(request, 'contacts.html', {'user': current_user})
+    return render(request, 'contacts.html', {'img': img, 'user': current_user})
 
 
-def typography(request):
+def tourism_page(request):
     comment_list = comment.objects.all()
     current_user = request.user
     img = pic.objects.all()
@@ -43,7 +45,7 @@ def typography(request):
         address_latitude.append(attractions[i].latitude)
         address_data.append(attractions[i].intro)
 
-    return render(request, 'typography.html', {'img': img, 'attractions': attractions, 'ethnic': ethnics,
+    return render(request, 'tourism.html', {'img': img, 'attractions': attractions, 'ethnic': ethnics,
                                                'address_longitude': json.dumps(address_longitude),
                                                'address_latitude': json.dumps(address_latitude),
                                                'address_data': json.dumps(address_data),

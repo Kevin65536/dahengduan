@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from testapp.models import pic, tourism, ethnic
+from mainapp.models import pic, tourism, ethnic
 from comments.models import comment
 
 admin.site.register(pic)

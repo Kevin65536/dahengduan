@@ -9,7 +9,7 @@ import mptt.fields
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("testapp", "0010_alter_tourism_options"),
+        ("mainapp", "0010_alter_tourism_options"),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
         ("comments", "0001_initial"),
     ]
@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
             field=models.ForeignKey(
                 default=0,
                 on_delete=django.db.models.deletion.CASCADE,
-                to="testapp.tourism",
+                to="mainapp.tourism",
             ),
             preserve_default=False,
         ),

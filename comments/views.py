@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic.list import ListView
 from .models import comment
-from testapp.models import tourism
+from mainapp.models import tourism
 from .forms import CommentForm
 
 

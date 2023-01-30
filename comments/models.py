@@ -1,7 +1,7 @@
 from django.db import models
 from mptt.models import MPTTModel, TreeForeignKey
 from django.contrib.auth.models import User
-from testapp.models import tourism
+from mainapp.models import tourism
 
 # Create your models here.
 

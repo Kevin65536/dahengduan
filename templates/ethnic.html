@@ -2,7 +2,7 @@
 {% load static %}
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>About</title>
+    <title>Ethnic</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
         </div>
         <p>Loading...</p>
       </div>
-    </div><a class="section section-banner d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank" style="background-image: url({% static 'images/background-02-1920x60.jpg' %}); background-image: -webkit-image-set( url({% static "images/background-02-1920x60.jpg" %}) 1x, url({% static "images/background-02-3840x120.jpg" %}) 2x )"><img src="{% static "images/foreground-02-1600x60.png" %}" srcset="{% static "images/foreground-02-1600x60.png" %} 1x, {% static "images/foreground-02-3200x120.png" %} 2x" alt="" width="1600" height="310"></a>
+    </div><a class="section section-banner d-none d-xl-block" href="#" target="_blank" style="background-image: url({% static 'images/background-02-1920x60.jpg' %}); background-image: -webkit-image-set( url({% static "images/background-02-1920x60.jpg" %}) 1x, url({% static "images/background-02-3840x120.jpg" %}) 2x )"><img src="{{ MEDIA_URL }}{{ img.1.img }}" srcset="{{ MEDIA_URL }}{{ img.1.img }} 1x, {{ MEDIA_URL }}{{ img.1.img }} 2x" alt="" width="1600" height="310"></a>
     <div class="page">
       <header class="section page-header">
         <!--RD Navbar-->
@@ -41,13 +41,13 @@
                   <li>
                     <div class="unit unit-spacing-xs align-items-center">
                       <div class="unit-left"><span class="icon text-middle fa-envelope"></span></div>
-                      <div class="unit-body"><a href="mailto:#">info@demolink.org</a></div>
+                      <div class="unit-body"><a href="mailto:#">info@dahengduan.org</a></div>
                     </div>
                   </li>
                   <li>
                     <div class="unit unit-spacing-xs align-items-center">
                       <div class="unit-left"><span class="icon text-middle fa-map-marker"></span></div>
-                      <div class="unit-body"><a href="#">2164 Wall St. New York, NY 10122</a></div>
+                      <div class="unit-body"><a href="#">甘肃省兰州市城关区天水南路222号</a></div>
                     </div>
                   </li>
                 </ul>
@@ -72,19 +72,19 @@
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!--RD Navbar Brand-->
                   <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand" href={% url "testapp:index" %}><img class="brand-logo-dark" src="{% static "images/logo-hengduan-200x34.png" %}" alt="" width="100" height="17"/><img class="brand-logo-light" src="{% static "images/logo-hengduan-200x34.png" %}" alt="" width="100" height="17"/></a>
+                    <!--Brand--><a class="brand" href={% url "mainapp:index" %}><img class="brand-logo-dark" src="{% static "images/logo-hengduan-200x34.png" %}" alt="" width="100" height="17"/><img class="brand-logo-light" src="{% static "images/logo-hengduan-200x34.png" %}" alt="" width="100" height="17"/></a>
                   </div>
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">
                     <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item"><a class="rd-nav-link" href={% url "testapp:index" %}>Home</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href={% url "mainapp:index" %}>Home</a>
                       </li>
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href={% url "testapp:about" %}>Ethnic</a>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href={% url "mainapp:ethnic_page" %}>Ethnic</a>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href={% url "testapp:typography" %}>Tourism</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href={% url "mainapp:tourism_page" %}>Tourism</a>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href={% url "testapp:contacts" %}>Contacts</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href={% url "mainapp:contacts" %}>Contacts</a>
                       </li>
                     </ul>
                   </div>
@@ -245,17 +245,17 @@
           <div class="row justify-content-center">
             <div class="col-md-10 col-12 text-center"><span class="text-white d-block cta-big-text font-weight-medium">Still Have Some Questions Left?</span>
               <h2 class="text-white"><span class="d-block">Get in Touch with Us:<a class="underline-link" href="tel:#"> 855-456-7634</a></span></h2>
-              <p class="text-white">Feel free to contact our team to learn more about the services provided by us and multiple offers for Your business!</p><a class="button-circle button-default-outline button button-lg button-width-210" href={% url "testapp:contacts" %}>contact us</a>
+              <p class="text-white">Feel free to contact our team to learn more about the services provided by us and multiple offers for Your business!</p><a class="button-circle button-default-outline button button-lg button-width-210" href={% url "mainapp:contacts" %}>contact us</a>
             </div>
           </div>
         </div>
       </section>
-      <!--Footer--><a class="section section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank" style="background-image: url({% static "images/background-01-1920x310.jpg" %}); background-image: -webkit-image-set( url({% static "images/background-01-1920x310.jpg" %}) 1x, url({% static "images/background-01-3840x620.jpg" %}) 2x )"><img src="{% static "images/foreground-01-1600x310.png" %}" srcset="{% static "images/foreground-01-1600x310.png" %} 1x, {% static "images/foreground-01-3200x620.png" %} 2x" alt="" width="1600" height="310"></a>
+      <!--Footer--><a class="section section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank" style="background-image: url({% static "images/background-01-1920x310.jpg" %}); background-image: -webkit-image-set( url({% static "images/background-01-1920x310.jpg" %}) 1x, url({% static "images/background-01-3840x620.jpg" %}) 2x )"><img src="{{ MEDIA_URL }}{{ img.0.img }}" srcset="{{ MEDIA_URL }}{{ img.0.img }} 1x, {{ MEDIA_URL }}{{ img.0.img }} 2x" alt="" width="1600" height="310"></a>
       <footer class="section footer-classic section-sm">
         <div class="container">
           <div class="row row-30">
             <div class="col-lg-3 wow fadeInLeft">
-              <!--Brand--><a class="brand" href={% url "testapp:index" %}><img class="brand-logo-dark" src="{% static "images/logo-default-200x34.png" %}" alt="" width="100" height="17"/><img class="brand-logo-light" src="{% static "images/logo-inverse-200x34.png" %}" alt="" width="100" height="17"/></a>
+              <!--Brand--><a class="brand" href={% url "mainapp:index" %}><img class="brand-logo-dark" src="{% static "images/logo-default-200x34.png" %}" alt="" width="100" height="17"/><img class="brand-logo-light" src="{% static "images/logo-inverse-200x34.png" %}" alt="" width="100" height="17"/></a>
               <p class="footer-classic-description offset-top-0 offset-right-25">СonsultBiz provides a full range of business consulting & advisory services to small, medium, and international companies worldwide. We use innovations and experience to drive your success.</p>
             </div>
             <div class="col-lg-3 col-sm-8 wow fadeInUp">
@@ -270,11 +270,11 @@
             <div class="col-lg-2 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
               <P class="footer-classic-title">Quick Links</P>
               <ul class="footer-classic-nav-list">
-                <li><a href={% url "testapp:index" %}>Home</a></li>
-                <li><a href={% url "testapp:about" %}>About us</a></li>
+                <li><a href={% url "mainapp:index" %}>Home</a></li>
+                <li><a href={% url "mainapp:ethnic_page" %}>ethnic</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href={% url "testapp:about" %}>Contacts</a></li>
+                <li><a href={% url "mainapp:contacts" %}>Contacts</a></li>
               </ul>
             </div>
             <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">

@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.staticfiles",
     "mptt",
-    "testapp",
+    "mainapp",
     "comments",
     "backend",
     "crispy_forms",
@@ -57,7 +57,7 @@ AUTHENTICATION_BACKENDS = (
 
 SITE_ID = 1
 
-LOGIN_REDIRECT_URL = '/testapp/index'
+LOGIN_REDIRECT_URL = '/mainapp/index'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
