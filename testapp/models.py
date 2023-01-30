@@ -1,5 +1,4 @@
 from django.db import models
-import django.utils.timezone as timezone
 from django.db.models.signals import pre_delete, post_init, post_save
 from django.dispatch import receiver
 
@@ -15,6 +14,7 @@ class pic(models.Model):
 
 
 class tourism(models.Model):
+
     name = models.CharField(max_length=20)
     img = models.ImageField(upload_to='tourism')
     intro = models.CharField(max_length=250)

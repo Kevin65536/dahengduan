@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.sites",
     "django.contrib.staticfiles",
+    "mptt",
     "testapp",
+    "comments",
     "backend",
     "crispy_forms",
 ]

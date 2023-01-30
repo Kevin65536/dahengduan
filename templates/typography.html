@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% load crispy_forms_tags %}
 <html class="wide wow-animation" lang="en">
   <head>
     <title>Typography</title>
@@ -298,6 +299,35 @@
 
         </div>
       </section>
+      <section class="section section-lg bg-default">
+
+          <div class="container" style="background: #f3f4f4">
+          <details>
+              <summary>点击展开</summary>
+              {% for comment in comment_list %}
+              <div>
+                <h5>{{comment.user}}: {{comment.content}}</h5>
+              </div>
+              {% endfor %}
+              <form action="{% url 'comments:post_comment' %}" method="post" class="comment-form">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-12">
+                    <form target="iframe">
+                        <label>评论：</label>
+                  {{ form|crispy }}
+                  {{ form.content.errors }}
+                    </form>
+                    <button type="submit" style="float: right; border-radius:15px; margin-top: -10px">发表</button>
+                </div>
+              </div>
+            </form>
+          </details>
+
+          </div>
+
+      </section>
+
       <!--Image Left-->
       <section class="section section-lg bg-default">
         <div class="container">

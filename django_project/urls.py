@@ -28,6 +28,7 @@ urlpatterns = [
     path('account/', include('allauth.urls')),
     path("", index),
     path("dashboard/", dashboard),
+    path("comment/", include('comments.urls', namespace='comments'))
 ]
 urlpatterns += staticfiles_urlpatterns()
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
