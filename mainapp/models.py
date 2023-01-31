@@ -13,10 +13,12 @@ class pic(models.Model):
         return self.name
 
 
+
 class tourism(models.Model):
 
     name = models.CharField(max_length=20)
     img = models.ImageField(upload_to='tourism')
+    img_index = models.ImageField(upload_to='tourism')
     intro = models.CharField(max_length=250)
     longitude = models.FloatField()
     latitude = models.FloatField()
