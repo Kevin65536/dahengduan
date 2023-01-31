@@ -95,12 +95,12 @@
         </div>
       </header>
       <section class="section section-intro context-dark">
-        <div class="intro-bg" style="background: url({% static "images/intro-bg-1.jpg" %}) no-repeat;background-size:cover;background-position: top center;"></div>
+        <div class="intro-bg" style="background: url({{ MEDIA_URL }}{{ img.9.img }}) no-repeat;background-size:cover;background-position: top center;"></div>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 text-center">
               <h1 class="font-weight-bold wow fadeInLeft">民  族</h1>
-              <p class="intro-description wow fadeInRight">Feel free to learn more about our team and company on this page. We are always happy to help you!</p>
+              <p class="intro-description wow fadeInRight">横断山区是我国西部历史上藏、羌、彝众多民族先民为主体、贯穿大西北、大西南的民族迁徙通道区。</p>
             </div>
           </div>
         </div>
@@ -111,16 +111,16 @@
           <div class="row row-40 justify-content-center">
             <div class="col-lg-6 col-12">
               <div class="offset-top-45 offset-lg-right-45">
-                <div class="section-name wow fadeInRight" data-wow-delay=".2s">About us</div>
-                <h3 class="wow fadeInLeft text-capitalize" data-wow-delay=".3s">A Few Words<span class="text-primary"> about us</span></h3>
-                <p class="font-weight-bold text-gray-dark wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum nulla ac tincidunt malesuada. Sed volutpat semper elit quis pharetra. Etiam sodales a sem vitae fermentum.</p>
-                <p class="wow fadeInUp" data-wow-delay=".4s">Sapien eget mi proin sed libero enim sed faucibus turpis. Placerat in egestas erat imperdiet sed euismod nisi. Vulputate eu scelerisque felis imperdiet. Lorem donec massa sapien faucibus. Volutpat diam.</p>
-                <p class="wow fadeInUp" data-wow-delay=".4s">Adipiscing enim eu turpis egestas pretium aenean pharetra magna. Nullam non nisi est sit amet facilisis magna etiam. Nec feugiat in fermentum posuere urna nec.</p>
+                <div class="section-name wow fadeInRight" data-wow-delay=".2s">民族走廊</div>
+                <h3 class="wow fadeInLeft text-capitalize" data-wow-delay=".3s">多元 丰富<span class="text-primary"> 和而不同</span></h3>
+                <p class="font-weight-bold text-gray-dark wow fadeInUp" data-wow-delay=".4s">横断山是我国民族种类繁多的地区。上世纪80年代，社会学家费孝通提出了“藏彝走廊”的概念，它的地理范围和横断山区大致重合，因此，现在也有人把它叫做“横断走廊”。</p>
+                <p class="wow fadeInUp" data-wow-delay=".4s">走廊有两重意义。首先，这些走廊是狭长的，比如西北走廊沿着东西方向延伸，这是地理意义上的“走廊”。再者，这些走廊是各民族迁徙往来的通道，走廊中的人口是不断流动的，这是文化意义上的“走廊”。</p>
+                <p class="wow fadeInUp" data-wow-delay=".4s">在历史上，藏彝走廊地区经历了五次大的民族流动，才有了现在民族杂糅的局面。</p>
                 <div class="offset-top-20">
                   <!--Linear progress bar-->
                   <article class="progress-linear">
                     <div class="progress-header progress-header-simple">
-                      <p>Management</p><span class="progress-value">85</span>
+                      <p>{{ ethnics.0.name }}</p><span class="progress-value">{{ ethnics.0.population }}</span>
                     </div>
                     <div class="progress-bar-linear-wrap">
                       <div class="progress-bar-linear"></div>
@@ -129,7 +129,7 @@
                   <!--Linear progress bar-->
                   <article class="progress-linear">
                     <div class="progress-header progress-header-simple">
-                      <p>Marketing</p><span class="progress-value">45</span>
+                      <p>{{ ethnics.1.name }}</p><span class="progress-value">{{ ethnics.1.population }}</span>
                     </div>
                     <div class="progress-bar-linear-wrap">
                       <div class="progress-bar-linear"></div>
@@ -138,7 +138,7 @@
                   <!--Linear progress bar-->
                   <article class="progress-linear">
                     <div class="progress-header progress-header-simple">
-                      <p>Analysis</p><span class="progress-value">90</span>
+                      <p>{{ ethnics.2.name }}</p><span class="progress-value">{{ ethnics.2.population }}</span>
                     </div>
                     <div class="progress-bar-linear-wrap">
                       <div class="progress-bar-linear"></div>
@@ -148,7 +148,7 @@
               </div>
             </div>
             <div class="col-lg-6 col-sm-10 col-12">
-              <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s"><img src="{% static "images/about-1-570x703.jpg" %}" alt="" width="570" height="351"/>
+              <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s"><img src="{{ MEDIA_URL }}{{ img.10.img }}" alt="" width="570" height="351"/>
               </div>
             </div>
           </div>
@@ -159,41 +159,41 @@
         <div class="container">
           <div class="row row-50 justify-content-center">
             <div class="col-md col-12 text-center">
-              <div class="section-name wow fadeInRight" data-wow-delay=".2s">People Behind Our Success</div>
-              <h3 class="wow fadeInLeft text-capitalize" data-wow-delay=".3s">Meet Our<span class="text-primary"> Team</span></h3>
-              <p class="block-675">Mi proin sed libero enim sed faucibus. Metus dictum at tempor commodo. Viverra justo nec ultrices dui sapien eget mi. Eget felis eget nunc lobortis.</p>
+              <div class="section-name wow fadeInRight" data-wow-delay=".2s">民族简介</div>
+              <h3 class="wow fadeInLeft text-capitalize" data-wow-delay=".3s">主要<span class="text-primary"> 民族</span></h3>
+              <p class="block-675">在这一区域中，还有一个重要的羌语支，作为最早来到这里的移民，羌人的重要性不言而喻。因此，有人提出用“藏羌彝走廊”代替“藏彝走廊”，或者直接用表示地理位置的“横断走廊”，更加全面。</p>
             </div>
           </div>
           <div class="row row-50 justify-content-center">
             <div class="col-xl-4 col-sm-6 col-10 wow fadeInLeft" data-wow-delay=".3s">
               <div class="team-classic-wrap">
-                <div class="team-classic-img"><img src="{% static "images/team-classic-1-370x397.jpg" %}" alt="" width="370" height="198"/>
+                <div class="team-classic-img"><img src="{{ MEDIA_URL }}{{ ethnics.0.img }}" alt="" width="370" height="198"/>
                 </div>
                 <div class="block-320 text-center">
-                  <h4 class="font-weight-bold">William Johnson</h4><span class="d-block">CEO, Founder</span>
-                  <p>Placerat duis ultricies lacus sed turpis tincidunt id aliquet. Et pharetra pharetra massa massa ultricies.</p>
+                  <h4 class="font-weight-bold">{{ ethnics.0.name }}</h4>
+                  <p>{{ ethnics.0.intro }}</p>
                   <hr class="offset-top-40"/>
                 </div>
               </div>
             </div>
             <div class="col-xl-4 col-sm-6 col-10 wow fadeInUp" data-wow-delay=".3s">
               <div class="team-classic-wrap">
-                <div class="team-classic-img"><img src="{% static "images/team-classic-2-370x397.jpg" %}" alt="" width="370" height="198"/>
+                <div class="team-classic-img"><img src="{{ MEDIA_URL }}{{ ethnics.1.img }}" alt="" width="370" height="198"/>
                 </div>
                 <div class="block-320 text-center">
-                  <h4 class="font-weight-bold">Jane McMillan</h4><span class="d-block">Business Advisor</span>
-                  <p>Ut morbi tincidunt augue interdum velit. Sed euismod nisi porta lorem nisl rhoncus mattis rhoncus urna sed.</p>
+                  <h4 class="font-weight-bold">{{ ethnics.1.name }}</h4>
+                  <p>{{ ethnics.1.intro }}</p>
                   <hr class="offset-top-40"/>
                 </div>
               </div>
             </div>
             <div class="col-xl-4 col-sm-6 col-10 wow fadeInRight" data-wow-delay=".3s">
               <div class="team-classic-wrap">
-                <div class="team-classic-img"><img src="{% static "images/team-classic-3-370x397.jpg" %}" alt="" width="370" height="198"/>
+                <div class="team-classic-img"><img src="{{ MEDIA_URL }}{{ ethnics.2.img }}" alt="" width="370" height="198"/>
                 </div>
                 <div class="block-320 text-center">
-                  <h4 class="font-weight-bold">Robert Smith</h4><span class="d-block">Marketing Manager</span>
-                  <p>Vitae aliquet nec ullamcorper sit amet risus nullam eget felis. Euismod lacinia at quis risus sed vulputate.</p>
+                  <h4 class="font-weight-bold">{{ ethnics.2.name }}</h4>
+                  <p>{{ ethnics.2.intro }}</p>
                   <hr class="offset-top-40"/>
                 </div>
               </div>

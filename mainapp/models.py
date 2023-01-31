@@ -32,7 +32,7 @@ class ethnic(models.Model):
     img = models.ImageField(upload_to='ethnic')
     intro = models.CharField(max_length=250)
     population = models.CharField(max_length=20)
-
+    intro_long = models.CharField(max_length=1000)
     def __str__(self):
         return self.name
 

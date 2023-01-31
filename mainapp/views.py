@@ -19,8 +19,9 @@ def index(request):
 
 def ethnic_page(request):
     img = pic.objects.all()
+    ethnics = ethnic.objects.all()
     current_user = request.user
-    return render(request, 'ethnic.html', {'img': img, 'user': current_user})
+    return render(request, 'ethnic.html', {'img': img, 'ethnics': ethnics, 'user': current_user})
 
 
 def contacts(request):
