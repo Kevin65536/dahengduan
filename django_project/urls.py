@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from testapp.views import index, about, contacts, typography
+from mainapp.views import index, ethnic_page, contacts, tourism_page
+import allauth
 from backend.views import dashboard
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib.staticfiles.urls import static
@@ -23,9 +24,11 @@ from . import settings
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('testapp/', include('testapp.urls', namespace='testapp')),
+    path('mainapp/', include('mainapp.urls', namespace='mainapp')),
+    path('account/', include('allauth.urls')),
     path("", index),
-    path("dashboard/", dashboard)
+    path("dashboard/", dashboard),
+    path("comment/", include('comments.urls', namespace='comments'))
 ]
 urlpatterns += staticfiles_urlpatterns()
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
