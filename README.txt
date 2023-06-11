@@ -1,9 +1,7 @@
-# dahengduan
-运行前准备：
-pip3 install django
-pip3 install django-simpleui
-pip3 install django-allauth
-pip3 install django-crispy-forms
-pip3 install django-mptt
-pip3 install pillow
-pip3 install markdown
+项目名称：西北在线——一个线上风景区信息展示与售票平台
+
+项目预期实现功能：
+1.后台数据展示与管理：在后台展示客户数量，网页点击量等数据，并可以通过管理员账户进入数据库管理，对客户数据，前台需要展示的信息等进行操作。
+2.前端地图显示：前台可以显示景区在地图上的位置，并提供地图缩放，标点等功能。
+3.客户评论：客户可以在评论区中对景区进行评价，支持评论回复，点赞，按不同顺序排列评论的功能
+4.门票售卖：可以进入门票购买界面，购买完成后提供虚拟凭证
